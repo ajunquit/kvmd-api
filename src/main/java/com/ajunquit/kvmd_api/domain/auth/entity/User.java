@@ -1,7 +1,6 @@
 package com.ajunquit.kvmd_api.domain.auth.entity;
 
 import java.time.Instant;
-import java.time.LocalDateTime;
 import java.util.Set;
 import java.util.UUID;
 

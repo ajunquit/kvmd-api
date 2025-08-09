@@ -6,7 +6,6 @@ import java.time.LocalDateTime;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import com.ajunquit.kvmd_api.domain.auth.entity.User;
 import com.ajunquit.kvmd_api.domain.customer.entity.Customer;
 import com.ajunquit.kvmd_api.domain.order.enums.OrderStatus;
 
