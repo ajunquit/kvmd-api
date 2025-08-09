@@ -21,7 +21,6 @@ public class CustomerAppService {
   public CustomerResponse createCustomer(CustomerRequest customerRequest) {
     Customer customer = CustomerMapper.toEntity(customerRequest);
     CustomerHelper.setAuditFields(customer, "root");
-    CustomerHelper.setId(customer);
     return CustomerMapper.toResponse(_customerRepository.save(customer));
   }
 }

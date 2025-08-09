@@ -1,4 +1,4 @@
-package com.ajunquit.kvmd_api.presentation.controllers.customers;
+package com.ajunquit.kvmd_api.presentation.customers.controllers;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

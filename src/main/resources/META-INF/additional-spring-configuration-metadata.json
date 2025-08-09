@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "auth.secretBase64",
+    "type": "java.lang.String",
+    "description": "A description for 'auth.secretBase64'"
+  },
+  {
+    "name": "auth.expirationMs",
+    "type": "java.lang.String",
+    "description": "A description for 'auth.expirationMs'"
+  }
+]}
