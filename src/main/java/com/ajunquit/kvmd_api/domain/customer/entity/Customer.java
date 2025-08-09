@@ -38,6 +38,9 @@ public class Customer {
     private String address;
 
     @Column(nullable = false)
+    private String RUC;
+
+    @Column(nullable = false)
     private boolean activeRecord;
 
     @CreationTimestamp

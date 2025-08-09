@@ -7,7 +7,7 @@ import java.util.UUID;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import com.ajunquit.kvmd_api.domain.auth.enums.EnumRoles;
+import com.ajunquit.kvmd_api.domain.auth.enums.Role;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
@@ -51,7 +51,7 @@ public class User {
     @Size(max = 120)
     private String fullName;
 
-    private Set<EnumRoles> roles;
+    private Set<Role> roles;
 
     @Column(nullable = false)
     private boolean activeRecord;
