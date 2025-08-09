@@ -19,7 +19,7 @@ public class CustomerRequest {
   private String lastName;
 
   @NotEmpty(message = "Email is required")
-  @Email(message = "Invalid email format")
+  @Email(message = "Invalid email format", regexp = ".+@.+\\..+")
   private String email;
 
   @Size(max = 15, message = "Phone number should be no longer than 15 characters")
