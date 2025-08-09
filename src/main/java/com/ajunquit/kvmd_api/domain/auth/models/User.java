@@ -5,21 +5,24 @@ import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.data.annotation.Id;
 
 import com.ajunquit.kvmd_api.domain.auth.enums.UserStatus;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
-
+@Entity
+@Table(name = "users")
 public class User {
     @Id
     private UUID id;
 
-    @Column(name = "username", nullable = false, unique = true)
+    @Column(nullable = false, unique = true)
     private String userName;
     
-    @Column(name = "email", nullable = false, unique = true)
+    @Column(nullable = false, unique = true)
     private String email;
     
     @Column(nullable = false)
