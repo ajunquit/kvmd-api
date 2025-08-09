@@ -31,7 +31,7 @@ public class SecurityConfig {
       .csrf(csrf -> csrf.disable())
       .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
       .authorizeHttpRequests(auth -> auth
-          .requestMatchers("/api/auth/register", "/api/auth/login").permitAll()
+          .requestMatchers("/api/auth/register", "/api/auth/login", "/h2-console/**").permitAll()
           .anyRequest().authenticated()
       )
       .authenticationProvider(provider)
