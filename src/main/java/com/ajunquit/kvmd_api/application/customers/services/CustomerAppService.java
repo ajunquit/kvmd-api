@@ -1,8 +1,5 @@
 package com.ajunquit.kvmd_api.application.customers.services;
 
-import java.time.Instant;
-import java.util.UUID;
-
 import org.springframework.stereotype.Service;
 
 import com.ajunquit.kvmd_api.application.customers.dtos.requests.CustomerRequest;
