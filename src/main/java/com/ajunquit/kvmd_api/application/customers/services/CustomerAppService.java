@@ -2,7 +2,6 @@ package com.ajunquit.kvmd_api.application.customers.services;
 
 import org.springframework.stereotype.Service;
 
-import com.ajunquit.kvmd_api.application.auth.services.JwtAppService;
 import com.ajunquit.kvmd_api.application.auth.services.UserAppService;
 import com.ajunquit.kvmd_api.application.customers.dtos.requests.CustomerRequest;
 import com.ajunquit.kvmd_api.application.customers.dtos.responses.CustomerResponse;
