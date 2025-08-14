@@ -14,6 +14,8 @@ import com.ajunquit.kvmd_api.domain.auth.repository.UserRepository;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
+import java.time.Instant;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -42,6 +44,8 @@ public class AuthController {
         .password(encoder.encode(req.getPassword()))
         .role(Role.USER)
         .activeRecord(true)
+        .createdAt(Instant.now())
+        .fullName(req.getFullName())
         .build();
 
     users.save(u);
