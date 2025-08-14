@@ -1,0 +1,33 @@
+REGISTER
+
+curl --location 'http://localhost:45177/api/auth/register' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "username": "alejandro",
+    "password": "alejandro",
+    "email": "ajunquit@gmail.com",
+    "fullName": "Alejandro Junqui"
+}'
+
+LOGIN
+
+curl --location 'http://localhost:45177/api/auth/login' \
+--header 'Content-Type: application/json' \
+--data '{
+    "username": "alejandro",
+    "password": "alejandro"
+}'
+
+CUSTOMERS:CREATE
+
+curl --location 'http://localhost:45177/api/customers' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVqYW5kcm8iLCJpYXQiOjE3NTUxNTI4MTIsImV4cCI6MTc1NTIzOTIxMn0.euMR8ayTO0TR3IlivnIOeLrwqqLJaiB7mujgTPAKz_o' \
+--data '{
+    "firstName": "Alejandro",
+    "lastName": "Alejandro",
+    "email": "2",
+    "phone": "Alejandro",
+    "address": "Alejandro",
+    "ruc": "0923522445001"
+}'
